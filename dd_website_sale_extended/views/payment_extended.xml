@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="payment_extended" inherit_id="website_sale.payment" name="WT Payment">
+            <xpath expr="//div[@id='payment_method']" position="before">
+                <div class="mt-3" id="delivery_date_div">
+                    <label class="label-optional mr-2" data-oe-field-xpath="/t[1]/label[1]"><b>Delivery Date :</b></label>
+                    <input type="date" name="delivery_date" value="" id="delivery_date" style="border:none;outline:none;border-bottom: 1px solid;"/>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
